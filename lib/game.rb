@@ -31,14 +31,24 @@ def won?
   end
   def over?
     won? || draw?
+    won? || board.full?
   end
   def winner
     board.cells[won?[0]] if won?
   end
   
+<<<<<<< HEAD
 def turn
+=======
+  def turn
+
+>>>>>>> 265538cc109fda03b9e91b13f95fda2f2ae711ae
 input=current_player.move(board).to_i
 if board.valid_move?(input.to_s)
+
+input=current_player.move(input).to_i-1
+if board.valid_move?(input)
+
 board.update(input, current_player)
 board.display
 else turn
@@ -56,4 +66,8 @@ def play
     end
   end
 end
+<<<<<<< HEAD
+=======
+  end
+>>>>>>> 265538cc109fda03b9e91b13f95fda2f2ae711ae
   
