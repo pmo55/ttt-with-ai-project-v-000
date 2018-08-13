@@ -42,10 +42,6 @@ def turn
 
   def turn
 
-
-input=current_player.move(board).to_i
-if board.valid_move?(input.to_s)
-
 input=current_player.move(input).to_i-1
 if board.valid_move?(input)
 
