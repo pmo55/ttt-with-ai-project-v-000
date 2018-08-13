@@ -31,7 +31,7 @@ case answer
 when "Y" || "y"
 start
 when "N" || "n"
-puts "Thanks for playing!
+puts "Thanks for playing!"
 end
 
 
