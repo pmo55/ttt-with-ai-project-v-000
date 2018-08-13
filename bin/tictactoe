@@ -24,6 +24,10 @@ def start
       start
   end
 end
+def play_again
+
+end
+
 start
 
 
