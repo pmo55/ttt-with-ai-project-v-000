@@ -30,7 +30,7 @@ answer=gets.strip
 case answer 
 when  "y"
 start
-when "N" || "n"
+when "n"
 puts "Thanks for playing!"
 end
 
