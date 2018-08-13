@@ -25,10 +25,10 @@ def start
   end
 end
 def play_again
-puts "Y/N"
+puts "y/n"
 answer=gets.strip
 case answer 
-when "Y" || "y"
+when  "y"
 start
 when "N" || "n"
 puts "Thanks for playing!"
