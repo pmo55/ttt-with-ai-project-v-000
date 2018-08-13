@@ -31,7 +31,6 @@ def won?
   end
   def over?
     won? || draw?
-    won? || board.full?
   end
   def winner
     board.cells[won?[0]] if won?
@@ -39,9 +38,6 @@ def won?
   
 
 def turn
-
-  def turn
-
 input=current_player.move(board).to_i
 if board.valid_move?(input)
 
